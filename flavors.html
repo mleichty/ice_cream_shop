@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <a href="index.html" class="nav__link nav--home">Home</a>
+        <a href="about.html" class="nav__link nav--about">About</a>
+        <div class="nav__link nav--logo">
+            <img src="images/logo.png" alt="Super Duper logo">
+        </div>
+        <a href="flavors.html" class="nav__link nav--flavors">Flavors</a>
+        <a href="contact.html" class="nav__link nav--contact">Contact</a>
+        <div class="nav__hamburger"><i class="fas fa-bars fa-lg"></i></div>
+        <div class="nav__hamlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="flavors.html">Flavors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="flavors">
+        <div class="flavors__titleDiv">
+            <p class="flavors__title">Flavors</p>
+            <div class="triangle"></div>
+        </div>
+        <div class="flavors__flavors">
+            <div class="flavors__flavor flavors__flavor--blue">
+                <p class="flavors__flavortext flavors__flavorblueJSON"></p>
+                <p class="flavors__flavortext flavors__flavortext--hidden flavors__costblueJSON">$</p>
+                <p class="flavors__flavortext flavors__flavortext--hidden">Blue ice cream is as delicious as a
+                    well-planned picnic in a meadow on a summer day. Every bite is filled with that sunny feeling of
+                    glorious bliss to which you know you can only hold on to for a few seconds, but every second is
+                    worth it.</p>
+            </div>
+            <div class="flavors__flavor flavors__flavor--choc">
+                <p class="flavors__flavortext flavors__flavorchocJSON"></p>
+                <p class="flavors__flavortext flavors__flavortext--hidden flavors__costchocJSON">$</p>
+                <p class="flavors__flavortext flavors__flavortext--hidden">Our chocolate ice cream drips with refreshing
+                    romance. It's rich, it's creamy, it's like a forbidden pool of deliciousness. This creation is an
+                    ode to everything chocolate since the beginning of time.</p>
+            </div>
+            <div class="flavors__flavor flavors__flavor--van">
+                <p class="flavors__flavortext flavors__flavorvanJSON"></p>
+                <p class="flavors__flavortext flavors__flavortext--hidden flavors__costvanJSON">$</p>
+                <p class="flavors__flavortext flavors__flavortext--hidden">Plain vanilla is everything but plain. It's
+                    an explosion of youth and wisdom simultaneously. We like to think we grow too old for it, but vanilla
+                    will be the faithful constant throughout our lives.</p>
+            </div>
+            <div class="flavors__flavor flavors__flavor--trio">
+                <p class="flavors__flavortext flavors__flavortrioJSON"></p>
+                <p class="flavors__flavortext flavors__flavortext--hidden flavors__costtrioJSON">$</p>
+                <p class="flavors__flavortext flavors__flavortext--hidden">The trio is a blend of Larry, Curly, and
+                    Moe... oh wait, wrong reference. But seriously, this ice cream has the perfect complementing flavors
+                    and the same amount of intrigue as the stooges themselves.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__third footer__third--social">
+            <p class="footer__title">Social</p>
+            <div class="footer__content footer__content--social">
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="footer__third footer__third--info">
+            <p class="footer__title">Business Info</p>
+            <div class="footer__content">
+                <p>219 Cherry Lane</p>
+                <p>Indianapolis, IN 46202</p>
+                <p>Mon - Fri: 11 - 9</p>
+                <p>Sat - Sun: 10 - 6</p>
+            </div>
+        </div>
+        <div class="footer__third footer__third--contact">
+            <p class="footer__title">Contact</p>
+            <div class="footer__content">
+                <a href="#"><p>111-111-1111</p></a>
+                <a href="#"><p>super-duper@gmail.com</p></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>

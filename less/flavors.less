@@ -1,0 +1,130 @@
+.flavors {
+  min-height: 100vh;
+  background-color: @gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 100px;
+
+  .flavors__titleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 100px;
+
+    .flavors__title {
+      padding: 10px 45px;
+      background-color: @darkpink;
+      transform: rotate(5deg);
+      font-size: 40px;
+      margin-bottom: -10px;
+      color: white;
+    }
+  }
+
+  .flavors__flavors {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+
+    .flavors__flavor {
+      width: 100%;
+      border: 5px solid @lightgray;
+      margin: 40px;
+      //background-color: @darkblue;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .flavors__flavortext {
+        padding: 10px 25px;
+        background-color: @gray;
+        font-size: 30px;
+        color: white;
+      }
+
+      .flavors__flavortext--hidden {
+        display: none;
+        margin: 10px 100px;
+        font-size: 18px;
+      }
+
+      @media all and (min-width: 768px) {
+        .flavors__flavortext--hidden {
+          font-size: 30px;
+        }
+      }
+
+      .open {
+        display: block;
+      }
+    }
+
+    @media all and (min-width: 1150px) {
+      .flavors__flavor {
+        width: 70%;
+      }
+    }
+
+    @media all and (min-width: 1150px) {
+      .flavors__flavor {
+        width: 40%;
+      }
+    }
+
+    .flavors__flavor--blue {
+      //background: url("../images/icecream1.jpg") no-repeat center;
+      background-size: cover;
+      transform: rotate(-5deg);
+    }
+
+    .flavors__flavor--choc {
+      //background: url("../images/icecream2.jpg") no-repeat center;
+      background-size: cover;
+      transform: rotate(5deg);
+    }
+
+    .flavors__flavor--van {
+      //background: url("../images/icecream3.jpg") no-repeat center;
+      background-size: cover;
+      transform: rotate(-5deg);
+    }
+
+    .flavors__flavor--trio {
+      //background: url("../images/icecream4.jpg") no-repeat center;
+      background-size: cover;
+      transform: rotate(5deg);
+    }
+
+    .expand {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .flavors {
+    //flex-direction: row;
+  }
+}
